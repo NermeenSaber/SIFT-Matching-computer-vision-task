@@ -1,0 +1,20 @@
+Determine whether two images are similar to each other or not.
+
+  • You should use SIFT features to find the matches between each pair of images and filter 
+  these matches to get the most significant matches.
+
+  • For matches filtering; you have to use at least two of these techniques:
+      1- David Lowe’s Ratio
+
+      2- Threshold based on distance. (The distance must not be constant and should be 
+      derived from an analysis of the data distribution)
+
+      3- Manual CrossCheck (Make sure that the top matches remain as the top if the order 
+      of query and train image changes). You cannot use built-in CrossCheck.
+
+  • For each pair of images calculate the similarity score using the equation below:
+
+      𝑛𝑢𝑚𝑏𝑒𝑟 𝑜𝑓 𝑚𝑎𝑡𝑐ℎ𝑒𝑠 𝑎𝑓𝑡𝑒𝑟 𝑓𝑖𝑙𝑡𝑒𝑟𝑖𝑛𝑔 / min (𝑛𝑢𝑚𝑏𝑒𝑟 𝑜𝑓 𝑘𝑒𝑦𝑝𝑜𝑖𝑛𝑡𝑠 𝑖𝑛 𝑖𝑚𝑎𝑔𝑒1, 𝑛𝑢𝑚𝑏𝑒𝑟 𝑜𝑓 𝑘𝑒𝑦𝑝𝑜𝑖𝑛𝑡𝑠 𝑖𝑛 𝑖𝑚𝑎𝑔𝑒2)
+
+  • Draw the matches between the two images and print the similarity score between each 
+  two images and mention whether the two images are similar or not.
